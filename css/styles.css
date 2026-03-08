@@ -68,7 +68,7 @@ ul, ol{
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-
+    padding: 0 15px;
   }
 }
 .section-title {
@@ -268,6 +268,12 @@ letter-spacing: 0.04em;
     max-width: 216px;
     width: 100%;
 }
+@media only screen and (max-width: 767.98px) {
+  .page-title {
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+  }
+}
 @media only screen and (min-width: 768px) {
   .page-title {
     font-size: 56px;
@@ -309,7 +315,11 @@ letter-spacing: 0.04em;
     padding: 96px 0;
     
 }
-
+@media only screen and (min-width: 1158px) {
+  .features-section {
+    padding: 120px 0;
+  }
+}
 .visually-hidden,
 .read-only {
   position: absolute;
@@ -385,7 +395,7 @@ letter-spacing: 0.04em;
 }
 
 @media only screen and (min-width: 1158px) {
-  .feature-text {
+  .features-text {
     font-weight: 400;
   }
 }
@@ -539,7 +549,7 @@ letter-spacing: 0.04em;
 }
 @media only screen and (min-width: 1158px) {
   .portfolio-list {
-    row-gap: 40px;
+    row-gap: 48px;
     column-gap: 24px;
   }
 }
@@ -559,11 +569,19 @@ letter-spacing: 0.04em;
     width: calc((100% - 24px * 2)/3);;
   }
 }
-
+@media only screen and (max-width: 1157.89px) {
+  .portfolio-item {
+    box-shadow:
+  0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+}
 @media only screen and (max-width: 768px) {
   .port-img {
     width: 288px;
     height: 280px;
+    
   }
 }
 
@@ -592,11 +610,13 @@ overflow: hidden;
 .portfolio-item:hover .overlay-text{
     transform: translateY(0);
 }
-.portfolio-item:hover{
+@media only screen and (min-width: 1158px){
+  .portfolio-item:hover{
     box-shadow:
   0px 2px 1px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16),
   0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
 }
 .overlay-text{
   letter-spacing: 0.02em;
@@ -617,6 +637,11 @@ overflow: hidden;
 .footer {
     padding: 100px 0;
     background-color: #2E2F42;
+}
+@media only screen and (max-width: 1157.98px) {
+  .footer {
+    padding: 96px 0;
+  }
 }
 .footer > .container{
     display: flex;
@@ -885,6 +910,11 @@ overflow: hidden;
 
     padding: 72px 24px 24px;
     align-items: center;
+}
+@media only screen and (max-width: 767.98px) {
+  .user-form {
+    padding: 72px 16px 24px;
+  }
 }
 .input-wrap {
     display: flex;
